@@ -5,6 +5,26 @@
     <meta charset="utf-8">
     <title>Suresh's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <style>
+        #logo{
+            width:150px;
+            height:150px;
+        }
+        h1{
+            font-size:40px;
+            font-weight:600;
+        }
+        #headerName{
+            padding-top: 4%;
+        }
+        hr{
+            border: none;
+            height: 3px;
+        /* Set the hr color */
+            color: #555; /* old IE */
+            background-color: #555; /* Modern Browsers */
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-inverse">
@@ -27,7 +47,20 @@
     </ul>
 </div>
 </nav>
-
+<div class="container">
+    <header>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><img src="images/logo.png" class="img-responsive" id="logo"></div>
+            <div class="container">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-uppercase text-right" id="headerName"><h1>Konar s suresh</h1><h5>frontend web developer</h5></div>
+            </div>
+        </div>
+    </header>
+    <div class="row"><hr></div>
+    <div class="row">
+        <div class="col-xs-12"><h3>Featured Works</h3></div>
+    </div>
+</div>
 <script  defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script  defer type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
