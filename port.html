@@ -24,6 +24,12 @@
             color: #555; /* old IE */
             background-color: #555; /* Modern Browsers */
         }
+        img{
+            width:100%;
+        }
+        .featured{
+            height:150px;
+        }
     </style>
 </head>
 <body>
@@ -56,14 +62,21 @@
             </div>
         </div>
     </header>
-    <div class="row"><hr></div>
+    <div class="row"><div class="col-xs-12"><hr></div></div>
     <div class="row">
         <div class="col-xs-12"><h3>Neighbourhood-map-project</h3></div>
-        <div class="col-xs-12"><img class="img-responsive" src="images/neighbourhood.png"><a href="#" data-toggle="modal" data-target="#mapProject">details</a></div>
+        <div class="col-xs-12"><img class="img-responsive" src="images/neighbourhood.png"><a href="#" data-toggle="modal" data-target="#mapProject"><h4>details about this project</h4></a></div>
     </div>
     <div class="row">
-
+        <div class="col-xs-12"><h3>Featured works</h3></div>
     </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><img src="images/todo.png" class="featured"><h4>To-do-App<a href="#" data-toggle="modal" data-target="#todo">  (details)</a></h4></div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><img src="images/pgs.png" class="featured"><h4>Performance Optimisation project<a href="#" data-toggle="modal" data-target="#pageSpeed">  (details)</a></h4></div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><img src="images/music.jpg" class="featured"><h4>Patatap music app<a href="#" data-toggle="modal" data-target="#patatap">  (details)</a></h4></div>
+    </div>
+    <div class="row"><div class="col-xs-12"><hr></div></div>
+    <p class="text-right">Made on 31-07-2017</p>
 </div>
 
 <div id="mapProject" class="modal fade" role="dialog">
@@ -92,6 +105,78 @@
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
+  </div>
+</div>
+<div id="todo" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">To-Do App</h4>
+      </div>
+      <div class="modal-body">
+        <p>This is a basic web based To-do app.In this app there will be initial to-do checklist which can be deleted if required.
+        then things to do can be added in the checklist by typing the to-do in the input field and clicking the submit button.
+        todo not required can be deleted. by clicking on the to-do it can be marked or unmarked based upon the initial status of the to-do.</p>
+        <h4>Frameworks used</h4>
+        <ul>
+            <li>Font-awesome</li>
+        </ul>
+        <h4>Library used</h4>
+        <li>Jquery</li>
+        <a href="https://konarssuresh.github.io/todo-app/" target="_blank">link for to-do app</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div id="pageSpeed" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">PageSpeed Optimisation Project</h4>
+      </div>
+      <div class="modal-body">
+        <p>In this project a sample project was handed over to me of which i had to bring the pagespeed insights score above 90 and had to implement the 60 fps concept in it. Initially the pagespeed insights score was 30-40 . by doing optimisations in the code i got the pagespeed insights score above 90. The link for that project is given below.If u check the pagespeed insights score of the link in <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">this</a>you will find the page speed score above 90. u just have to paste the link given below in that page</p>
+
+
+        <a href="https://konarssuresh.github.io/frontend-nanodegree-mobile-portfolio/" target="_blank">link for the page-speed-optimisation</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div id="patatap" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Patatap music app</h4>
+      </div>
+      <div class="modal-body">
+        <p>There are certain apps in internet such as PataTap in which sound is produced when any key in the keyboard of dextop is pressed. This project is very basic version of such apps in which i have tried to mock basic featured of such app.Html's canvas is used to produce graphics and famous library Jquery is also used in this project. this app runs in PC only and its not for mobiles.Link for that app is given below</p>
+
+
+        <a href="https://konarssuresh.github.io/patatap/" target="_blank">link for the Patatap music app</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
   </div>
 </div>
 <script  defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
