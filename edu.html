@@ -3,14 +3,23 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
-    <title>Konar S Suresh</title>
+    <title>Education details</title>
     <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
     <style>
+        hr{
+            border: none;
+            height: 3px;
+        /* Set the hr color */
+            color: #555; /* old IE */
+            background-color: #555; /* Modern Browsers */
+        }
         body{
-            background:url('images/port-bg.jpg');;
+            background-image: url("images/education.jpg");
+            background-size: cover;
+            background-size: contain;
         }
         .jumbotron{
-            background-color: rgba(196, 196, 196, 0.8);
+            background-color: rgba(196,196,196,0.94);
         }
     </style>
 </head>
@@ -31,14 +40,36 @@
         <li><a href="about.html">About me</a></li>
         <li><a href="#" data-toggle="modal" data-target="#email">E-mail</a></li>
         <li><a href="#" data-toggle="modal" data-target="#mobile">Mobile no</a></li>
+        <li><a href="index.html">Home page</a></li>
     </ul>
 </div>
 </nav>
 <div class="container">
     <div class="jumbotron">
-        <h1>Hi there..I am Suresh</h1>
-        <p> If you are looking for a passionate front-end developer who loves creating web pages then you are looking for the right one...click on button below...to view my responsive portfolio</p>
-        <a href="port.html" class="btn btn-default btn-primary btn-lg">Click me!!</a>
+        <div class="row">
+            <div class="col-xs-12"><h2>Education details</h2></div>
+            <div class="col-xs-12"><hr></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Online Courses</h3>
+                <ul>
+                    <li><h4>Frontend Web Developer Nano-degree- <em>Udacity</em></h4><strong>June 8 2017 - July 20 2017</strong>-  <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" target="_blank"><strong><em>link</em></strong></a><br><a href="resources/nd001.pdf" target="_blank"><strong>View Certificate</strong></a></li>
+                    <li><h4>Web Developer Bootcamp- <em>Udemy</em></h4><strong>May 2017</strong>   <a href="https://www.udemy.com/the-web-developer-bootcamp/" target="_blank"><strong><em>link</em></strong></a><br></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+            <h3>Education</h3>
+            <ul>
+                <li><h4>Velammal Institute of Technology- <em><strong>B.E.</strong></em></h4><h5>Major- Electrical and Electronics</h5><strong>2013-2017</strong>-  <a href="http://velammalitech.edu.in/" target="_blank">Link</a></li>
+                <li><h4>Narayana Junior College- <em><strong>Intermediate</strong></em></h4><h5>Major- Maths,Physics,Chemistry</h5><strong>2011-2013</strong>-  <a href="http://www.narayanajuniorcolleges.com/" target="_blank">Link</a></li>
+                <li><h4>Sunflag School- <em><strong>Matriculate</strong></em></h4><h5>Major- Maths,Science</h5><strong>2010</strong></li>
+            </ul>
+            </div>
+        </div>
+
     </div>
 </div>
 <div id="mobile" class="modal fade" role="dialog">
