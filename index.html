@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Konar S Suresh</title>
     <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <style>
         body{
             background:url('images/port-bg.jpg');;
@@ -36,9 +37,9 @@
 </nav>
 <div class="container">
     <div class="jumbotron">
-        <h1>Hi there..I am Suresh</h1>
-        <p> If you are looking for a passionate front-end developer who loves creating web pages then you are looking for the right one...click on button below...to view my responsive portfolio</p>
-        <a href="port.html" class="btn btn-default btn-primary btn-lg">Click me!!</a>
+        <h1 class="wow slideInLeft">Hi there..I am Suresh</h1>
+        <p class="wow slideInRight"> If you are looking for a passionate front-end developer who loves creating web pages then you are looking for the right one...click on button below...to view my responsive portfolio</p>
+        <a href="port.html" class="btn btn-default btn-primary btn-lg wow rubberBand">Click me!!</a>
     </div>
 </div>
 <div id="mobile" class="modal fade" role="dialog">
@@ -85,5 +86,24 @@
 </div>
 <script  defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script  defer type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null,    // optional scroll container selector, otherwise use window,
+    resetAnimation: true,     // reset animation on end (default is true)
+  }
+);
+wow.init();
+</script>
 </body>
 </html>
